@@ -1,4 +1,6 @@
 .vs
+OpenGL/OpenGL/x64.vcxproj.user
+OpenGL/OpenGL/x64/Release
+OpenGL/OpenGL/x64/Debug
+OpenGL/OpenGL/OpenGL.vcxproj.user
 OpenGL/x64/Debug
-OpenGL/OpenGL.vcxproj.user
-OpenGL/x64/Release

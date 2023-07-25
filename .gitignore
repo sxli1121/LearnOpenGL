@@ -5,3 +5,4 @@ OpenGL/OpenGL/x64/Debug
 OpenGL/OpenGL/OpenGL.vcxproj.user
 OpenGL/x64/Debug
 OpenGL/Dependencies/GLFW/x64/Debug
+OpenGL/Dependencies/Glad/x64/Debug

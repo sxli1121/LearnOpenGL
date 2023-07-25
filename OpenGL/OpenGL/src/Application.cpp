@@ -1,4 +1,7 @@
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
+#include <iostream>
 
 int main(void)
 {
@@ -19,6 +22,11 @@ int main(void)
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
+    int version = gladLoadGL();
+    if (!version)
+        std::cout << "Error!" << std::endl;
+
+    std::cout << glGetString(GL_VERSION) << std::endl;
     //ÑÕÉ«
     glClearColor(1, 0, 0, 1);
     //Èý½ÇÐÎ
@@ -28,12 +36,6 @@ int main(void)
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(-0.5f, -0.5f);
-        glVertex2f(0.0f, 0.5f);
-        glVertex2f(0.5f, -0.5f);
-        glEnd();
 
 
         /* Swap front and back buffers */
